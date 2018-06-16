@@ -1,0 +1,17 @@
+[package]
+name = "wasm-playground"
+version = "0.1.0"
+authors = ["Ty Overby <ty@pre-alpha.com>"]
+
+[[bin]]
+name = "runner"
+path = "src/runner.rs"
+
+[[bin]]
+name = "builder"
+path = "src/builder.rs"
+
+[dependencies]
+parity-wasm = "0.31.*"
+wasmi = "0.2.*"
+wabt = "0.3.*"
